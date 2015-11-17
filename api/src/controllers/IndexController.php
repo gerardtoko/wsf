@@ -5,6 +5,11 @@ class IndexController {
 
   public function index($req, $res){
     $movies = new Movie();
-    $res->json($movies->rows);
+    $series = new Serie();
+    $res->html("index.php", array(
+        "movies" => $movies->rows, 
+        "series" => $series->rows
+      )
+    );
   }
 }

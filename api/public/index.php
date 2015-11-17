@@ -25,4 +25,10 @@ $router->addRoute(array(
     'POST'   => array('IndexController', 'index')
 ));
 
+$router->addRoute(array(
+    'route'  => '^/movie$',
+    'GET'   => array('MovieController', 'one')
+));
+
+
 $router->run();
