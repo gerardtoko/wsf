@@ -42,3 +42,4 @@ NameVirtualHost *:8888
 
 </VirtualHost>
 ```
+* Changer le répertoire cible vers le vôtre ```/Applications/MAMP/htdocs/P2019/public```
