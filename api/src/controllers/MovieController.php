@@ -1,13 +1,14 @@
 <?php
 
-
+// Classe Movie
 class MovieController {
 
-  public function one($req, $res){
+  public function index($req, $res){
+    // Changement de tous les films à travers le modèle Movie relié à la base de données
     $movies = new Movie();
-    $id = ((int) $_GET["id"]); // Récupération de l'id
-    $movie = $movies->rows[$id];
 
-    $res->html("movie.php", $movie);
+    // Envoi des films vers la vue
+    // Nom du template et données à transmettre
+    $res->html("index.php", $movies->rows);
   }
 }

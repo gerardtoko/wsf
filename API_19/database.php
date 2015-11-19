@@ -5,9 +5,28 @@ $database = array(
     "email" => "membres@wsf.fr",
     "password" => "5fa9c3cbc25addd13cc516171ea722ce"
   ),
-  "admin" => array(
-    "email" => "admin@wsf.fr",
-    "password" => "21232f297a57a5a743894a0e4a801fc3"
+  "games" => array(
+    array(
+      "Nom" => "Forrest Gump",
+      "Annee" => 1994,
+      "Durée" => "2h20min",
+      "Réalisateur" => "Robert Zemeckis",
+      "Acteurs" => array("Tom Hanks", "Gary Siniseplus"),
+      "Genres" => array("Comédie dramatique" , "Romance"),
+      "Like" => 100806,
+      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg",
+
+    ),
+    array(
+      "Nom" => "La Ligne verte",
+      "Annee" => 2000,
+      "Durée" => "3h9min",
+      "Réalisateur" => "Frank Darabont",
+      "Acteurs" => array("Tom Hanks", "Michael Clarke Duncan"),
+      "Genres" => array("Fantastique" , "Policier"),
+      "Like" => 20030,
+      "Poster" => "http://www.notrecinema.com/images/cache/la-ligne-verte-poster_50432_40929.jpg",
+    )
   ),
   "movies" => array(
     array(
@@ -18,7 +37,8 @@ $database = array(
       "Acteurs" => array("Tom Hanks", "Gary Siniseplus"),
       "Genres" => array("Comédie dramatique" , "Romance"),
       "Like" => 100806,
-      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg"
+      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg",
+      "Private" => true
     ),
     array(
       "Nom" => "Django Unchained",
@@ -28,7 +48,8 @@ $database = array(
       "Acteurs" => array("Jamie Foxx", "Christoph Waltz"),
       "Genres" => array("Western"),
       "Like" => 10030,
-      "Poster" => "http://www.filmosphere.com/wp-content/uploads/2012/12/Django-Unchained-affiche.jpg"
+      "Poster" => "http://www.filmosphere.com/wp-content/uploads/2012/12/Django-Unchained-affiche.jpg",
+      "Private" => true
     ),
     array(
       "Nom" => "La Ligne verte",
