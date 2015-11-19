@@ -52,5 +52,17 @@ $router->addRoute(array(
     'GET'   => array('MembreController', 'index') // Classe MembreController, Méthode index
 ));
 
+// Création de compte
+$router->addRoute(array(
+    'route'  => '^/account$',
+    'GET'   => array('AccountController', 'get') // Classe AccountController, Méthode index
+));
+
+// Création de compte, envoie de données
+$router->addRoute(array(
+    'route'  => '^/account$',
+    'POST'   => array('AccountController', 'post') // Classe AccountController, Méthode index
+));
+
 
 $router->run();

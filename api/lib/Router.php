@@ -8,6 +8,7 @@ class Router {
   }
 
   public function run(){
+    $matched = false;
     foreach ($this->routes as $key => $route) {
 
       // Construction du chemin
@@ -34,10 +35,14 @@ class Router {
           $req = new Request();
           $res = new Response();
           $req->addParams();
+          $matched = true;
           $controller->$method_class($req, $res);
         }
       }
+    }
 
+    if($matched == false){
+      echo utf8_decode("Cette URL n'est pas référencée dans une route ou la route n'existe pas");
     }
   }
 }
