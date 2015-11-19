@@ -14,7 +14,8 @@ $database = array(
       "Acteurs" => array("Tom Hanks", "Gary Siniseplus"),
       "Genres" => array("Comédie dramatique" , "Romance"),
       "Like" => 100806,
-      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg"
+      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg",
+
     ),
     array(
       "Nom" => "La Ligne verte",
@@ -36,7 +37,8 @@ $database = array(
       "Acteurs" => array("Tom Hanks", "Gary Siniseplus"),
       "Genres" => array("Comédie dramatique" , "Romance"),
       "Like" => 100806,
-      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg"
+      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg",
+      "Private" => true
     ),
     array(
       "Nom" => "Django Unchained",
@@ -46,7 +48,8 @@ $database = array(
       "Acteurs" => array("Jamie Foxx", "Christoph Waltz"),
       "Genres" => array("Western"),
       "Like" => 10030,
-      "Poster" => "http://www.filmosphere.com/wp-content/uploads/2012/12/Django-Unchained-affiche.jpg"
+      "Poster" => "http://www.filmosphere.com/wp-content/uploads/2012/12/Django-Unchained-affiche.jpg",
+      "Private" => true
     ),
     array(
       "Nom" => "La Ligne verte",
