@@ -3,6 +3,12 @@
 <div id="movies">
   <h4>Movies <a href="/membres">Membre</a></h4>
   <hr>
+  <form action="/" method="post">
+    <input type="text" name="annee" placeholder="Annee">
+    <input type="text" name="genre" placeholder="Genre">
+    <button type="submit">Soumettre</button>
+  </form>
+
   <div class="container">
     <div class="row">
       <?php foreach($data["movies"] as $key => $movie) { ?>
