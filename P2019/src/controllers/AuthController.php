@@ -7,6 +7,17 @@ class AuthController {
     $res->html("login.php", array());
   }
 
+  public function test($req, $res) {
+
+      if(isset($_SESSION["test"])){
+        $_SESSION["test"] += 1;
+      } else {
+        $_SESSION["test"] = 0;
+      }
+
+      $_SESSION["Authentifié"] = 0;
+  }
+
   public function loginPost($req, $res){
 
     $membres = new Membre();
@@ -19,6 +30,10 @@ class AuthController {
     } else {
       $res->html("login.php", array());
     }
+  }
 
+  public function logout($req, $res){
+    $_SESSION["Authentifié"] = 0;
+    header('Location: /');
   }
 }

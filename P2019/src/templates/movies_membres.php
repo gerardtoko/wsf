@@ -1,7 +1,7 @@
 <?php include "common/header.php" ?>
 
 <div id="movies">
-  <h4>Games</h4>
+  <h4>Games <a href="/logout">Logout</a></h4>
   <hr>
   <div class="container">
     <div class="row">

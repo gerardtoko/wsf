@@ -19,6 +19,19 @@ session_start();
 // initialisation du router
 $router = new Router();
 
+
+$router->addRoute(array(
+    'route'  => '^/logout$',
+    'GET'   => array('AuthController', 'logout')
+));
+
+
+$router->addRoute(array(
+    'route'  => '^/test$',
+    'GET'   => array('AuthController', 'test')
+));
+
+
 $router->addRoute(array(
     'route'  => '^/login$',
     'GET'   => array('AuthController', 'login')
