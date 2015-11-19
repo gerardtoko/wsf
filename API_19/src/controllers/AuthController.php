@@ -8,7 +8,6 @@ class AuthController {
   }
 
   public function test($req, $res) {
-
       if(isset($_SESSION["test"])){
         $_SESSION["test"] += 1;
       } else {
@@ -19,7 +18,6 @@ class AuthController {
   }
 
   public function loginPost($req, $res){
-
     $membres = new Membre();
     $email = $membres->rows["email"];
     $password = $membres->rows["password"];
