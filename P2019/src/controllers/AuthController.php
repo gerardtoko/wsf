@@ -8,6 +8,9 @@ class AuthController {
   }
 
   public function loginPost($req, $res){
+
+    var_dump($_POST);
+    
     $res->html("login.php", array());
   }
 }
