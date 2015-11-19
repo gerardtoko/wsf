@@ -1,6 +1,10 @@
 <?php
 
 $database = array(
+  "membres" => array(
+    "email" => "membres@wsf.fr",
+    "password" => "5fa9c3cbc25addd13cc516171ea722ce"
+  ),
   "games" => array(
     array(
       "Nom" => "Forrest Gump",
