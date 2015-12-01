@@ -1,16 +1,32 @@
 <?php
 
-/**
- * Page d'accueil
- */
-class IndexController {
 
-  public function index($req, $res){
-    // Changement de tous les films à travers le modèle Movie relié à la base de données
-    $movies = new Movie();
+class Voiture {
 
-    // Envoi des films vers la vue
-    // Nom du template et données à transmettre
-    $res->html("index.php", $movies->rows);
+  $portes = 2;
+  $roues = 4;
+  $moteur = 1;
+
+  $vitesse = 70;
+
+  public function roule($vitesse){
+    $this->vitesse = $vitesse;
+  }
+
+  public function arret(){
+
+  }
+
+  public function drift(){
+
   }
 }
+
+$renault = new Voiture();
+$renault->portes = 5;
+$renault->roule(140);
+
+$ferrari = new Voiture();
+$ferrari->moteur = 2;
+$ferrari->vitesse = 340;
+$ferrari->arret();

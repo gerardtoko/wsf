@@ -28,6 +28,12 @@ $router->addRoute(array(
     'GET'   => array('MovieController', 'index') // Classe MovieController, Méthode index
 ));
 
+$router->addRoute(array(
+    'route'  => '^/series$',
+    'GET'   => array('SerieController', 'index') 
+));
+
+
 // Authentification des membres
 $router->addRoute(array(
     'route'  => '^/membres/login$',

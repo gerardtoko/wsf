@@ -9,6 +9,18 @@ $database = array(
     "email" => "admin@wsf.fr",
     "password" => "21232f297a57a5a743894a0e4a801fc3"
   ),
+  "series" => array(
+    array(
+      "Nom" => "Forrest Gump",
+      "Annee" => 1994,
+      "Durée" => "2h20min",
+      "Réalisateur" => "Robert Zemeckis",
+      "Acteurs" => array("Tom Hanks", "Gary Siniseplus"),
+      "Genres" => array("Comédie dramatique" , "Romance"),
+      "Like" => 100806,
+      "Poster" => "http://www.goldposter.com/wp-content/uploads/2015/04/Forrest-Gump_poster_goldposter_com_7.jpg"
+    ),
+   ), 
   "movies" => array(
     array(
       "Nom" => "Forrest Gump",
