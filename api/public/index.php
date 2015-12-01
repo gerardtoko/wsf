@@ -15,6 +15,7 @@ define('MYSQL_PASSWORD', 'root');
 define('MYSQL_DATABASE', 'wsf');
 define('MYSQL_HOST', 'localhost');
 define('MYSQL_PORT', 8889);
+define('MYSQL_SOCKET', '/tmp/mysql.sock');
 
 
 //Démarrage de la session en PHP

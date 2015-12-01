@@ -18,10 +18,6 @@ class AdminController {
   public function login($req, $res){
     // Page d'authentification
     $admin = new Admin();
-    $rows = $admin->insert();
-    var_dump($rows);
-    exit;
-
     $res->html("login.php", array());
   }
 

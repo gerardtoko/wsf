@@ -10,7 +10,13 @@ class Model {
     try {
       //Connection MySQL
       // $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
-      $this->db = new PDO('mysql:host='.MYSQL_HOST.':'. MYSQL_PORT . ';dbname='.MYSQL_DATABASE.';charset=utf8', MYSQL_USER, MYSQL_PASSWORD);
+      
+      if(defined('MYSQL_SOCKET')){
+        $this->db = new PDO('mysql:unix_socket='.MYSQL_SOCKET.';dbname='.MYSQL_DATABASE.';charset=utf8', MYSQL_USER, MYSQL_PASSWORD);
+      } else {
+        $this->db = new PDO('mysql:host='.MYSQL_HOST.':'. MYSQL_PORT . ';dbname='.MYSQL_DATABASE.';charset=utf8', MYSQL_USER, MYSQL_PASSWORD);
+      }
+
     } catch (Exception $e) {
       die('Erreur : ' . $e->getMessage());
     }
