@@ -1,32 +1,11 @@
 <?php
+/**
+ * Page d'accueil
+ */
+class IndexController {
+  public function index($req, $res){
+    $movies = new Movie();
 
-
-class Voiture {
-
-  $portes = 2;
-  $roues = 4;
-  $moteur = 1;
-
-  $vitesse = 70;
-
-  public function roule($vitesse){
-    $this->vitesse = $vitesse;
-  }
-
-  public function arret(){
-
-  }
-
-  public function drift(){
-
+    $res->html("index.php", array());
   }
 }
-
-$renault = new Voiture();
-$renault->portes = 5;
-$renault->roule(140);
-
-$ferrari = new Voiture();
-$ferrari->moteur = 2;
-$ferrari->vitesse = 340;
-$ferrari->arret();
