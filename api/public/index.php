@@ -1,22 +1,14 @@
 <?php
 
+
 // Affichage des erreurs PHP
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-
-// Constants de l'application
 define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/..'));
 
 require APPLICATION_PATH . '/lib/autoload.php';
-
-define('MYSQL_USER', 'root');
-define('MYSQL_PASSWORD', 'root');
-define('MYSQL_DATABASE', 'wsf');
-define('MYSQL_HOST', 'localhost');
-define('MYSQL_PORT', 8889);
-// define('MYSQL_SOCKET', '/tmp/mysql.sock');
-
+require APPLICATION_PATH . '/config.php';
 
 //Démarrage de la session en PHP
 session_start();
