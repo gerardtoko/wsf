@@ -6,8 +6,7 @@ class Movie extends Model {
   public $table_name = "movies";
 
   public function find(){        
-    $query = $this->dbConnection->from($this->table_name);
-    return $query->fetchAll();
+    return $this->dbConnection->from($this->table_name)->fetchAll();
   }
 
   public function findOne($id){        

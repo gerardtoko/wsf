@@ -1,0 +1,79 @@
+-- phpMyAdmin SQL Dump
+-- version 4.4.10
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost:8889
+-- Generation Time: Dec 02, 2015 at 11:02 AM
+-- Server version: 5.5.42
+-- PHP Version: 5.5.26
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `wsf`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admins`
+--
+
+CREATE TABLE `admins` (
+  `email` text NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`email`, `password`) VALUES
+('admin@admin.fr', '21232f297a57a5a743894a0e4a801fc3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `movies`
+--
+
+CREATE TABLE `movies` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(255) CHARACTER SET latin1 NOT NULL,
+  `année` int(11) DEFAULT NULL,
+  `durée` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `réalisateur` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `acteurs` varchar(512) CHARACTER SET latin1 DEFAULT NULL,
+  `genres` varchar(512) CHARACTER SET latin1 DEFAULT NULL,
+  `like` int(11) DEFAULT NULL,
+  `photo` varchar(512) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `movies`
+--
+
+INSERT INTO `movies` (`id`, `nom`, `année`, `durée`, `réalisateur`, `acteurs`, `genres`, `like`, `photo`) VALUES
+(2, 'Django Unchainedefzefzeez', 2013, '2h44min', 'Quentin Tarantino', 'Jamie Foxx, Christoph Waltz', 'Western', 10030, 'http://www.filmosphere.com/wp-content/uploads/2012/12/Django-Unchained-affiche.jpg'),
+(5, 'gzegzeg', 214, '2h34', 'TZS', 'efefe', 'ezfezfez', NULL, 'http://www.mad-movies.com/images/MM_MoviesBackdrops/1943/2bAIRwC77pGMxIuegcqmt88FJ7G.jpg');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `movies`
+--
+ALTER TABLE `movies`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `movies`
+--
+ALTER TABLE `movies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
