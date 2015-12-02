@@ -26,7 +26,7 @@
                       <td><?php echo $value["durée"] ?></td>
                       <td><?php echo $value["genres"] ?></td>
                       <td>
-                        <a href="/admin/movie?id=<?php echo $value["id"] ?>" class="btn btn-default">Update</a>
+                        <a href="/admin/movies/update?id=<?php echo $value["id"] ?>" class="btn btn-default">Update</a>
                         <a onclick="return confirm('Are you sure?')" href="/admin/movies/delete?id=<?php echo $value["id"] ?>" class="btn btn-danger">Delete</a>
                       </td>                                       
                   </tr>
