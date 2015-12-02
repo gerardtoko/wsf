@@ -25,7 +25,7 @@ class Router {
         $route_method = array_keys($route)[1];
 
         // Si la methode de la requête est la même, on déclenche le controller et la methode
-        if($request_method == $route_method){
+        if(($request_method == $route_method) || $route_method == "ALL"){
           $controlle_class = $route[$route_method][0];
           $method_class = $route[$route_method][1];
 

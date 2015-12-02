@@ -9,7 +9,21 @@ class Response {
     exit;
   }
 
+
   public function html($template_name, $data){
+    
+    function t($value){
+      return utf8_encode($value);
+    }
+
+    function value($data, $field){
+      if(isset($data[$field])){
+        return $data[$field];
+      }
+      return "";
+    }
+    
+    header("Content-type: text/html; charset=utf-8");
     include APPLICATION_PATH . "/src/templates/" . $template_name;
   }
 }

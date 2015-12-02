@@ -15,7 +15,7 @@ define('MYSQL_PASSWORD', 'root');
 define('MYSQL_DATABASE', 'wsf');
 define('MYSQL_HOST', 'localhost');
 define('MYSQL_PORT', 8889);
-define('MYSQL_SOCKET', '/tmp/mysql.sock');
+// define('MYSQL_SOCKET', '/tmp/mysql.sock');
 
 
 //Démarrage de la session en PHP
@@ -30,9 +30,31 @@ $router->addRoute(array(
     'GET'   => array('IndexController', 'index') // Classe IndexController, Méthode index
 ));
 
+
 $router->addRoute(array(
     'route'  => '^/admin$',
     'GET'   => array('AdminController', 'index') // Classe IndexController, Méthode index
+));
+
+$router->addRoute(array(
+    'route'  => '^/admin/movies$',
+    'GET'   => array('AdminMovieController', 'index') // Classe IndexController, Méthode index
+));
+
+$router->addRoute(array(
+    'route'  => '^/admin/movies/add$',
+    'ALL'   => array('AdminMovieController', 'add') // Classe IndexController, Méthode index
+));
+
+
+$router->addRoute(array(
+    'route'  => '^/admin/movies/update$',
+    'ALL'   => array('AdminMovieController', 'update') // Classe IndexController, Méthode index
+));
+
+$router->addRoute(array(
+    'route'  => '^/admin/movies/delete$',
+    'ALL'   => array('AdminMovieController', 'delete') // Classe IndexController, Méthode index
 ));
 
 // Authentification des membres

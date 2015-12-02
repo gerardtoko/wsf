@@ -4,8 +4,8 @@
  */
 class IndexController {
   public function index($req, $res){
-    $movies = new Movie();
-
-    $res->html("index.php", array());
+    $movie = new Movie();
+    $rows = $movie->find();
+    $res->html("index.php", array("movies" => $rows));
   }
 }

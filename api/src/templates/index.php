@@ -5,12 +5,12 @@
   <hr>
   <div class="container">
     <div class="row">
-      <?php foreach($data as $key => $movie) { ?>
+      <?php foreach($data["movies"] as $key => $movie) { ?>
         <div class="col-md-3">
-          <img src="<?php echo $movie["Poster"] ?>" class="img-mov img-thumbnail">
-          <div><?php echo $movie["Nom"] ?></div>
+          <img src="<?php echo $movie["photo"] ?>" class="img-mov img-thumbnail">
+          <div><?php echo $movie["nom"] ?></div>
           <div class="line2">
-            <?php echo $movie["Annee"] ?> (<?php echo $movie["Durée"] ?>)<br>
+            <?php echo $movie["année"] ?> (<?php echo $movie["durée"] ?>)<br>
           </div>
         </div>
       <?php } ?>
