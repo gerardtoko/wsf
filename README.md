@@ -18,7 +18,18 @@ $router->addRoute(array(
 
 $router->run();
 ```
-
+```
+CREATE TABLE `movies` (
+  `nom` varchar(255) NOT NULL,
+  `annee` int(11) DEFAULT NULL,
+  `durée` varchar(255) DEFAULT NULL,
+  `réalisateur` varchar(255) DEFAULT NULL,
+  `acteurs` varchar(512) DEFAULT NULL,
+  `genres` varchar(512) DEFAULT NULL,
+  `like` int(11) DEFAULT NULL,
+  `photo` varchar(512) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
 
 ### Configuration Apache
 
