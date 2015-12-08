@@ -23,8 +23,8 @@
       <div class="form-group">
         <div class="col-md-6">
             <h6><strong>Statut</strong></h6>
-            <input type="radio" name="activé" value="0" checked="checked"> Brouillion<br>
-            <input type="radio" name="activé" value="1"> Publié<br>
+            <input <?php echo checked("0", $data['activé']) ?> type="radio" name="activé" value="0"> Brouillion<br>
+            <input <?php echo checked("1", $data['activé']) ?> type="radio" name="activé" value="1"> Publiée<br>
         </div>
       </div>
       <button type="submit" class="btn btn-sm btn-success">Soumettre</button>

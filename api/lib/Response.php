@@ -22,6 +22,16 @@ class Response {
       }
       return "";
     }
+
+    function selected($data, $value){
+      if($data == $value) return "selected";
+      return "";
+    }
+
+    function checked($data, $value){
+      if($data == $value) return "checked";
+      return "";
+    }
     
     header("Content-type: text/html; charset=utf-8");
     include APPLICATION_PATH . "/src/templates/" . $template_name;

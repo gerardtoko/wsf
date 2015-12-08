@@ -7,14 +7,21 @@
     <div class="form-group">
       <div class="col-md-3">
           <select class="form-control" name="type">
-            <option value="Vestes" checked="checked"> Vestes</option>
-            <option value="Jeans"> Jeans</option>
-            <option value="T-shirts"> T-shirts</option>
-            <option value="Pulls"> Pulls</option>
-            <option value="Jupes"> Jupes</option>
-            <option value="Chaussures"> Chaussures</option>
-            <option value="Sacs"> Sacs</option>
-            <option value="Pantalons"> Pantalons</option>
+            <?php
+              // Test si le type existe
+              $type = ""; 
+              if(isset($_GET['type'])){
+                $type = $_GET['type'];
+              }
+            ?>
+            <option <?php echo selected("Vestes", $type) ?> value="Vestes" checked="checked"> Vestes</option>
+            <option <?php echo selected("Jeans", $type) ?> value="Jeans"> Jeans</option>
+            <option <?php echo selected("T-shirts", $type) ?> value="T-shirts"> T-shirts</option>
+            <option <?php echo selected("Pulls", $type) ?> value="Pulls"> Pulls</option>
+            <option <?php echo selected("Jupes", $type) ?> value="Jupes"> Jupes</option>
+            <option <?php echo selected("Chaussures", $type) ?> value="Chaussures"> Chaussures</option>
+            <option <?php echo selected("Sacs", $type) ?> value="Sacs"> Sacs</option>
+            <option <?php echo selected("Pantalons", $type) ?> value="Pantalons"> Pantalons</option>
           <select>
           <button type="submit" class="btn btn-sm btn-success">Filtrer</button>
       </div>

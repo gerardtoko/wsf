@@ -40,14 +40,14 @@
         <div class="col-md-6">
             <h6><strong>Type</strong></h6>
             <select name="type">
-              <input type="radio" name="type" value="Vestes" checked="checked"> Vestes<br>
-              <input type="radio" name="type" value="Jeans"> Jeans<br>
-              <input type="radio" name="type" value="T-shirts"> T-shirts<br>
-              <input type="radio" name="type" value="Pulls"> Pulls<br>
-              <input type="radio" name="type" value="Jupes"> Jupes<br>
-              <input type="radio" name="type" value="Chaussures"> Chaussures<br>
-              <input type="radio" name="type" value="Sacs"> Sacs<br>
-              <input type="radio" name="type" value="Pantalons"> Pantalons<br>
+              <option <?php echo selected("Vestes", $data['type']) ?> value="Vestes" checked="checked"> Vestes</option>
+              <option <?php echo selected("Jeans", $data['type']) ?> value="Jeans"> Jeans</option>
+              <option <?php echo selected("T-shirts", $data['type']) ?> value="T-shirts"> T-shirts</option>
+              <option <?php echo selected("Pulls", $data['type']) ?> value="Pulls"> Pulls</option>
+              <option <?php echo selected("Jupes", $data['type']) ?> value="Jupes"> Jupes</option>
+              <option <?php echo selected("Chaussures", $data['type']) ?> value="Chaussures"> Chaussures</option>
+              <option <?php echo selected("Sacs", $data['type']) ?> value="Sacs"> Sacs</option>
+              <option <?php echo selected("Pantalons", $data['type']) ?> value="Pantalons"> Pantalons</option>
             <select>
         </div>
       </div>
@@ -56,8 +56,8 @@
       <div class="form-group">
         <div class="col-md-6">
             <h6><strong>Statut</strong></h6>
-            <input type="radio" name="activé" value="0" checked="checked"> Brouillion<br>
-            <input type="radio" name="activé" value="1"> Publié<br>
+            <input <?php echo checked("0", $data['activé']) ?> type="radio" name="activé" value="0"> Brouillion<br>
+            <input <?php echo checked("1", $data['activé']) ?> type="radio" name="activé" value="1"> Publié<br>
         </div>
       </div>
       <button type="submit" class="btn btn-sm btn-success">Soumettre</button>
