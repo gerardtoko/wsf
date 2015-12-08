@@ -19,6 +19,7 @@
             <span class="help-block">Description de la catégorie</span>  
         </div>
       </div>
+
       <div class="form-group">
         <div class="col-md-6">
             <?php
