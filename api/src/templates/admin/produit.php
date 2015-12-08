@@ -39,25 +39,38 @@
       <div class="form-group">
         <div class="col-md-6">
             <h6><strong>Type</strong></h6>
-            <select name="type">
-              <option <?php echo selected("Vestes", $data['type']) ?> value="Vestes" checked="checked"> Vestes</option>
-              <option <?php echo selected("Jeans", $data['type']) ?> value="Jeans"> Jeans</option>
-              <option <?php echo selected("T-shirts", $data['type']) ?> value="T-shirts"> T-shirts</option>
-              <option <?php echo selected("Pulls", $data['type']) ?> value="Pulls"> Pulls</option>
-              <option <?php echo selected("Jupes", $data['type']) ?> value="Jupes"> Jupes</option>
-              <option <?php echo selected("Chaussures", $data['type']) ?> value="Chaussures"> Chaussures</option>
-              <option <?php echo selected("Sacs", $data['type']) ?> value="Sacs"> Sacs</option>
-              <option <?php echo selected("Pantalons", $data['type']) ?> value="Pantalons"> Pantalons</option>
+            <?php
+              // Test si le type existe
+              $type = ""; 
+              if(isset($data['type'])){
+                $type = $data['type'];
+              }
+            ?>
+            <select class="form-control" name="type">
+              <option <?php echo selected("Vestes", $type) ?> value="Vestes" checked="checked"> Vestes</option>
+              <option <?php echo selected("Jeans", $type) ?> value="Jeans"> Jeans</option>
+              <option <?php echo selected("T-shirts", $type) ?> value="T-shirts"> T-shirts</option>
+              <option <?php echo selected("Pulls", $type) ?> value="Pulls"> Pulls</option>
+              <option <?php echo selected("Jupes", $type) ?> value="Jupes"> Jupes</option>
+              <option <?php echo selected("Chaussures", $type) ?> value="Chaussures"> Chaussures</option>
+              <option <?php echo selected("Sacs", $type) ?> value="Sacs"> Sacs</option>
+              <option <?php echo selected("Pantalons", $type) ?> value="Pantalons"> Pantalons</option>
             <select>
         </div>
       </div>
 
-
       <div class="form-group">
         <div class="col-md-6">
+            <?php
+              // Test si le type existe
+              $active = ""; 
+              if(isset($data['activé'])){
+                $active = $data['activé'];
+              }
+            ?>
             <h6><strong>Statut</strong></h6>
-            <input <?php echo checked("0", $data['activé']) ?> type="radio" name="activé" value="0"> Brouillion<br>
-            <input <?php echo checked("1", $data['activé']) ?> type="radio" name="activé" value="1"> Publié<br>
+            <input <?php echo checked("0", $active) ?> type="radio" name="activé" value="0"> Brouillion<br>
+            <input <?php echo checked("1", $active) ?> type="radio" name="activé" value="1"> Publié<br>
         </div>
       </div>
       <button type="submit" class="btn btn-sm btn-success">Soumettre</button>

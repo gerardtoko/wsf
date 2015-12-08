@@ -19,12 +19,18 @@
             <span class="help-block">Description de la catégorie</span>  
         </div>
       </div>
-
       <div class="form-group">
         <div class="col-md-6">
+            <?php
+              // Test si le type existe
+              $active = ""; 
+              if(isset($data['activé'])){
+                $active = $data['activé'];
+              }
+            ?>
             <h6><strong>Statut</strong></h6>
-            <input <?php echo checked("0", $data['activé']) ?> type="radio" name="activé" value="0"> Brouillion<br>
-            <input <?php echo checked("1", $data['activé']) ?> type="radio" name="activé" value="1"> Publiée<br>
+            <input <?php echo checked("0", $active) ?> type="radio" name="activé" value="0"> Brouillion<br>
+            <input <?php echo checked("1", $active) ?> type="radio" name="activé" value="1"> Publié<br>
         </div>
       </div>
       <button type="submit" class="btn btn-sm btn-success">Soumettre</button>
