@@ -29,49 +29,25 @@ $router->addRoute(array(
 ));
 
 $router->addRoute(array(
-    'route'  => '^/admin/categories$',
-    'GET'   => array('AdminCategorieController', 'index') // Classe IndexController, Méthode index
+    'route'  => '^/admin/films$',
+    'GET'   => array('AdminFilmController', 'index') // Classe IndexController, Méthode index
 ));
 
 $router->addRoute(array(
-    'route'  => '^/admin/categories/add$',
-    'ALL'   => array('AdminCategorieController', 'add') // Classe IndexController, Méthode index
-));
-
-
-$router->addRoute(array(
-    'route'  => '^/admin/categories/update$',
-    'ALL'   => array('AdminCategorieController', 'update') // Classe IndexController, Méthode index
-));
-
-$router->addRoute(array(
-    'route'  => '^/admin/categories/delete$',
-    'ALL'   => array('AdminCategorieController', 'delete') // Classe IndexController, Méthode index
-));
-
-
-
-$router->addRoute(array(
-    'route'  => '^/admin/produits$',
-    'GET'   => array('AdminProduitController', 'index') // Classe IndexController, Méthode index
-));
-
-$router->addRoute(array(
-    'route'  => '^/admin/produits/add$',
-    'ALL'   => array('AdminProduitController', 'add') // Classe IndexController, Méthode index
+    'route'  => '^/admin/films/add$',
+    'ALL'   => array('AdminFilmController', 'add') // Classe IndexController, Méthode index
 ));
 
 
 $router->addRoute(array(
-    'route'  => '^/admin/produits/update$',
-    'ALL'   => array('AdminProduitController', 'update') // Classe IndexController, Méthode index
+    'route'  => '^/admin/films/update$',
+    'ALL'   => array('AdminFilmController', 'update') // Classe IndexController, Méthode index
 ));
 
 $router->addRoute(array(
-    'route'  => '^/admin/produits/delete$',
-    'ALL'   => array('AdminProduitController', 'delete') // Classe IndexController, Méthode index
+    'route'  => '^/admin/films/delete$',
+    'ALL'   => array('AdminFilmController', 'delete') // Classe IndexController, Méthode index
 ));
-
 
 // Authentification des membres
 $router->addRoute(array(

@@ -2,11 +2,11 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-  <title>Zara - Admin</title>
-
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Web School Factory Movie</title>
+
     <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//bootswatch.com/yeti/bootstrap.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="//bootswatch.com/paper/bootstrap.css" crossorigin="anonymous">
 
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -37,38 +37,39 @@
     a {
       text-decoration: none!important;
     }
-
-    * {
-      outline: none!important;
-    }
-
-    form {
-      margin-bottom:100px
-    }
   </style>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="/admin" class="navbar-brand">Zara <span class="label label-primary">Admin</span></a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li><a href="/admin/categories">Categories</a></li>
-            <li><a href="/admin/produits">Produits</a></li>
-          </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Site Web</a></li>
-            <li><a href="/admin/logout" target="_blank">Déconnexion</a></li>
-          </ul>
-        </div>
-      </div>
+
+<div style="margin-top:30px">
+
+<div class="col-md-4"></div>
+
+<div class="col-md-4">
+<div class="login-panel panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Admin</h3>
     </div>
+    <div class="panel-body">
+        <form role="form" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                </div>
+                <!-- Change this to a button or input when using this as a form -->
+                <button type="submit" class="btn btn-sm btn-success">Login</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</div>
+
+<div class="col-md-4"></div>
+
+</body>
+</html>
 

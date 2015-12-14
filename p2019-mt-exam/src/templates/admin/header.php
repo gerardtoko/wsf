@@ -2,11 +2,11 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-  <title>Zara - Admin</title>
+  <title>IMDB - Admin</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//bootswatch.com/yeti/bootstrap.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="//bootswatch.com/journal/bootstrap.css" crossorigin="anonymous">
 
 
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -51,7 +51,7 @@
 <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="/admin" class="navbar-brand">Zara <span class="label label-primary">Admin</span></a>
+          <a href="/admin" class="navbar-brand">IMDB <span class="label label-primary">Admin</span></a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -60,8 +60,7 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li><a href="/admin/categories">Categories</a></li>
-            <li><a href="/admin/produits">Produits</a></li>
+            <li><a href="/admin/films">Films</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">

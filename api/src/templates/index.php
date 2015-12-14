@@ -31,10 +31,10 @@
     <div class="row">
       <?php foreach($data["produits"] as $key => $produit) { ?>
         <div class="col-md-3">
-          <img src="<?php echo $produit["photo"] ?>" class="img-mov img-thumbnail">
+          <img src="<?php echo $produit["photo_url"] ?>" class="img-mov img-thumbnail">
           <div><?php echo $produit["nom"] ?></div>
           <div class="line2">
-            <?php echo $produit["année"] ?> (<?php echo $produit["durée"] ?>)<br>
+            <?php echo $produit["taille"] ?> (<?php echo $produit["prix"] ?>)<br>
           </div>
         </div>
       <?php } ?>

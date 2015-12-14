@@ -30,6 +30,14 @@
 
       <div class="form-group">
         <div class="col-md-6">
+            <h6><strong>Photo</strong></h6>
+            <input value="<?php echo value($data, "photo_url") ?>" name="photo_url" placeholder="Photo" class="form-control input-md" type="text">
+            <span class="help-block">Photo</span>  
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-6">
             <h6><strong>Taille</strong></h6>
             <input value="<?php echo value($data, "taille") ?>" name="taille" placeholder="Taille" class="form-control input-md" type="text">
             <span class="help-block">S, M, L, XL etc...</span>  

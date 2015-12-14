@@ -21,7 +21,6 @@ class BaseController {
   public function login($req, $res){
     // Page d'authentification
     $admin = new Admin();
-    
     $res->html("admin/login.php", array());
   }
 
